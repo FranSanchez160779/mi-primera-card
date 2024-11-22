@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.card__container {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: rgb(199, 3, 3);
+  cursor: pointer;
+}
+
+/* Indicadores del carrusel */
+.carousel__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px; /* Espaciado entre los puntos */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.6); /* Blanco semitransparente */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: white; /* Blanco sólido */
+}
+
+.dot:hover {
+  background-color: white;
+}
+
+.card__content {
+  padding-top: 10px;
+}
+
+.card__content h1 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 16px;
+  color: #555;
+  font-weight: normal;
+}
+
+.location {
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price span {
+  font-size: 16px;
+  color: #757575;
+}
